@@ -4,7 +4,7 @@ The paper is open access, available at https://ieeexplore.ieee.org/abstract/docu
 
 - Run "Fig_3.m" to get Figure 3 of the paper.
 - To get Figure 4 to Figure 6 of the paper:
-    a) Run "Fig_4_Train_xx.m" (xx is "MRT" or "ZF")
+    a) Run "Train_xx.m" (xx is "CB" or "ZF")
     b) Run "Python_Train_NN.ipyb" (Train the NN via Python)
     c) Run "Fig_4_Predic_xx.m" (xx is "MRT" or "ZF")
     
