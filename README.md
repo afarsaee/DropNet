@@ -7,9 +7,9 @@ The paper is open access, available at https://ieeexplore.ieee.org/abstract/docu
     a) Run "Train_xx.m" (xx is "CB" or "ZF") <br />
         - You need to put the generated mat files for Python code in an appropriate folder for step b <br />
             - Example --> put the generated mat files on '/9a_4u_MRT_Shadowing/' Fig. 4. (a) <br />
-    b) Run python code<br />
-        - You need to put the generated mat files from Python code in an appropriate folder for step c<br />
-            - Example --> put the generated mat files on '/9a_4u_MRT_Shadowing/' Fig. 4. (a) <br />
+    b) Run python code (the link will be added by tomorrow, march 30th, 2021)<br />
+        - After running the Python code, you need to put the generated mat files in an appropriate folder for step c<br />
+            - Example --> put the generated mat files on '/9a_4u_MRT_Shadowing/' for the scenario of Fig. 4. (a) <br />
     c) Run "Predict_xx.m" (xx is "CB" or "ZF")<br />
     
     
