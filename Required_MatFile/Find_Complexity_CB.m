@@ -20,6 +20,7 @@ len_Kminus1_user = length(find(n_drop_EXH == 1))/len_tot;
 len_Kminus2_user = length(find(n_drop_EXH == 2))/len_tot;
 len_avg_K = [len_K_user, len_Kminus1_user, len_Kminus2_user];
 %% Finding the total complexity of CB (EXH)
+cd ..
 cd data_ML_Complexity
 load CB_EXH_2.txt
 cd ..
