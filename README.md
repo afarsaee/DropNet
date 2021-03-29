@@ -4,7 +4,7 @@ The paper is open access, available at https://ieeexplore.ieee.org/abstract/docu
 
 - Run "Fig_3.m" to get Figure 3 of the paper.
 - To get Figure 4 to Figure 6 of the paper:
-    a) Run "Train_xx.m" (xx is "CB" or "ZF") 
+    a) Run "Train_xx.m" (xx is "CB" or "ZF")\n 
         - You need to put the generated mat files from Python in an appropriate folder for step b
             - Example --> put the generated mat files on '/CB_final_results/9x4_Shadowing/' Fig. 4. (a)
     b) Run python code
