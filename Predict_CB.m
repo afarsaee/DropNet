@@ -17,7 +17,7 @@ close all
 %% Initialization
 rng('default');
 addpath('func');          % adding the path for func
-directory_path = 'Results_from_Python'; 
+directory_path = 'CB_final_results/9x4_Shadowing';
 addpath(directory_path);  % adding the path for reading input from Python
 addpath('Required_MatFile'); % adding the path for Required Matlab files
 load H_predict.mat           % load the channel matrix to comptue sum-rate

@@ -16,7 +16,7 @@ close all
 %% Parameters
 addpath('func\');
 flag_complex = 0;       % 0: if you used |rho| as in paper, 1: if you'd like to use \rho (complex)
-flag_write = 0;         % if you'd like to save the data
+flag_write = 1;         % if you'd like to save the data
 K_max = 10;
 K_min = 4;
 K_ref = K_min:K_max;
