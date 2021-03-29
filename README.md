@@ -13,6 +13,6 @@ The paper is open access, available at https://ieeexplore.ieee.org/abstract/docu
     c) Run "Predict_xx.m" (xx is "CB" or "ZF")<br />
     
     
-Let me know if you have any questions or if I can be of any help : )
-Regards,
+Let me know if you have any questions or if I can be of any help : )<br />
+Regards,<br />
 Ashkan
