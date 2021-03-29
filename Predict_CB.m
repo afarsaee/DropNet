@@ -69,13 +69,13 @@ for i_channel = 1:n_channel
        error('error!');
    end
    % store the sum-rate for CDF plot and average
-   Sum_Rate_MRT_No_Drop = sum(log2(1+SINR_k_maxmin_CB_No_Drop));
-   sum_rate_CB_No_Drop = sum_rate_CB_No_Drop + Sum_Rate_MRT_No_Drop;
-   CDF_SumRate_ND(i_channel) = Sum_Rate_MRT_No_Drop;
+   Sum_Rate_CB_No_Drop = sum(log2(1+SINR_k_maxmin_CB_No_Drop));
+   sum_rate_CB_No_Drop = sum_rate_CB_No_Drop + Sum_Rate_CB_No_Drop;
+   CDF_SumRate_ND(i_channel) = Sum_Rate_CB_No_Drop;
 %% Exhaustive Search (read the true labels)
    % find the class associated with the set of dropped users
    index_to_be_dropped_not_decoded_EXH = Dropped_User_index(i_channel);
-   % finc the corresponding index
+   % find the corresponding index
    if index_to_be_dropped_not_decoded_EXH >= 1 && index_to_be_dropped_not_decoded_EXH <= n_user_ref
        % when 1 user is dropped
        index_to_be_dropped_EXH = index_to_be_dropped_not_decoded_EXH;
@@ -93,7 +93,7 @@ for i_channel = 1:n_channel
    % find the sum-rate
    if index_to_be_dropped_EXH == 0
        % no drop
-       CDF_SumRate_EXH(i_channel) = Sum_Rate_MRT_No_Drop;
+       CDF_SumRate_EXH(i_channel) = Sum_Rate_CB_No_Drop;
        n_drop_EXH(i_channel) = 0;
    else
        % 1 or 2 users are dropped
@@ -103,7 +103,7 @@ for i_channel = 1:n_channel
    SumRate_EXH_Current = CDF_SumRate_EXH(i_channel);
    % update the sum-rate variable
    sum_rate_CB_EXH = sum_rate_CB_EXH + SumRate_EXH_Current;
-   %% ML Dropping
+   %% DropNet
    % read the index from DropNet
    index_to_be_dropped_not_decoded = vec_index_predict(i_channel);
    % find the class associated with the set of dropped users
@@ -117,7 +117,7 @@ for i_channel = 1:n_channel
    % find the sum-rate for the set of dropped users
    if index_to_be_dropped == 0
        % no drop
-       SumRate_ML(i_channel) = Sum_Rate_MRT_No_Drop;
+       SumRate_ML(i_channel) = Sum_Rate_CB_No_Drop;
        n_drop_ML(i_channel) = 0;
    else
        % when 1 or 2 users are dropped
